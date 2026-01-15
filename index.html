@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherly Rosita Ningtyas - Personal Branding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .font-serif-italic {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+        .bg-pastel-gradient {
+            background: linear-gradient(-45deg, #fdf2f8, #f0f9ff, #f5f3ff, #ecfdf5, #fff7ed);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .animate-bounce-slow {
+            animation: bounce 3s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(-5%); animation-timing-function: cubic-bezier(0.8,0,1,1); }
+            50% { transform: none; animation-timing-function: cubic-bezier(0,0,0.2,1); }
+        }
+    </style>
+</head>
+<body class="bg-pastel-gradient text-gray-800 relative overflow-x-hidden">
+
+    <!-- Background Ornaments -->
+    <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+        <div class="absolute top-[10%] left-[-10%] w-[60vw] h-[60vw] rounded-full bg-pink-200/40 blur-[100px] animate-pulse"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-blue-200/40 blur-[100px] animate-pulse" style="animation-delay: 3s;"></div>
+        <div class="absolute top-[40%] right-[20%] w-[30vw] h-[30vw] rounded-full bg-purple-200/30 blur-[120px]"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-xl">
+        <div class="glass rounded-full px-6 py-3 flex justify-between items-center shadow-lg">
+            <span class="font-serif-italic font-bold text-xl tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">
+                SRN.
+            </span>
+            <div class="flex gap-6 text-sm font-medium">
+                <a href="#home" class="hover:text-pink-600 transition-colors text-gray-600">Beranda</a>
+                <a href="#about" class="hover:text-pink-600 transition-colors text-gray-600">Profil</a>
+                <a href="#hobby" class="hover:text-pink-600 transition-colors text-gray-600">Hobi</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20 px-4 md:px-8 max-w-6xl mx-auto">
+        
+        <!-- Hero Section -->
+        <section id="home" class="flex flex-col md:flex-row items-center justify-between gap-12 mb-32">
+            <div class="flex-1 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/40 border border-pink-200 text-pink-600 text-sm font-bold mb-6 shadow-sm backdrop-blur-sm">
+                    ✨ Marketing Handal
+                </div>
+                <h1 class="text-5xl md:text-7xl font-serif-italic mb-6 leading-tight">
+                    Halo, Saya <br />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-600 to-blue-600">
+                        Sherly Rosita Ningtyas
+                    </span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700/80 mb-8 max-w-xl mx-auto md:mx-0 leading-relaxed font-light italic">
+                    Seorang pemimpin masa depan yang strategist, visioner, dan professional dari Bumi Mageti. Seorang pemudi yang siap membawa diri dan lingkungannya ke arah yang lebih baik dalam sentuhan dunia yang penuh warna.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="https://wa.me/622337931876" class="px-8 py-4 bg-gray-900 text-white rounded-full font-medium hover:bg-gray-800 transition-all flex items-center gap-2 group shadow-xl hover:scale-105">
+                        Kenal Lebih Dekat 
+                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex-1 flex justify-center relative">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-[40px] rotate-3 overflow-hidden shadow-2xl border-4 border-white animate-float">
+                    <div class="absolute inset-0 bg-gradient-to-br from-pink-200 via-purple-200 to-blue-200 flex items-center justify-center">
+                        <svg class="w-32 h-32 text-white opacity-40" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                    </div>
+                </div>
+                <div class="absolute -bottom-6 -left-6 md:left-0 animate-bounce-slow">
+                    <div class="glass p-4 rounded-2xl flex items-center gap-3 shadow-xl">
+                        <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600 shadow-inner">
+                            ⭐
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Zodiak</p>
+                            <p class="font-bold text-gray-800 tracking-wide">Leo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="about" class="mt-40">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif-italic mb-4">Profil Lengkap</h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-pink-300 to-blue-300 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="glass p-8 md:p-12 border-none shadow-[0_20px_50px_rgba(0,0,0,0.08)] relative overflow-hidden rounded-[2rem]">
+                    <div class="absolute -right-20 -top-20 w-80 h-80 bg-purple-200/40 rounded-full blur-[80px]"></div>
+                    <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-blue-100/40 rounded-full blur-[80px]"></div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10 text-left">
+                        <div class="space-y-10">
+                            <div class="flex items-center gap-5 group">
+                                <div class="p-4 rounded-2xl bg-white/50 text-pink-500 shadow-sm group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                                    📅
+                                </div>
+                                <div>
+                                    <p class="text-xs uppercase tracking-[0.2em] text-gray-400 font-black mb-1">Lahir</p>
+                                    <p class="text-xl font-medium text-gray-700 leading-tight">Magetan, 02 September 2007</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-5 group">
+                                <div class="p-4 rounded-2xl bg-white/50 text-blue-500 shadow-sm group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
+                                    📍
+                                </div>
+                                <div>
+                                    <p class="text-xs uppercase tracking-[0.2em] text-gray-400 font-black mb-1">Domisili</p>
+                                    <p class="text-lg font-medium text-gray-700 leading-tight">Desa Mangunrejo, RT.12/RW.04, Kec. Kawedanan, Kab. Magetan</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-10">
+                            <div class="flex items-center gap-5 group">
+                                <div class="p-4 rounded-2xl bg-white/50 text-purple-500 shadow-sm group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                                    🎓
+                                </div>
+                                <div>
+                                    <p class="text-xs uppercase tracking-[0.2em] text-gray-400 font-black mb-1">Pendidikan</p>
+                                    <p class="text-xl font-medium text-gray-700 leading-tight">SMA Negeri 1 Magetan, Kelas XII IPA 6</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-5 group">
+                                <div class="p-4 rounded-2xl bg-white/50 text-yellow-600 shadow-sm group-hover:bg-yellow-500 group-hover:text-white transition-all duration-300">
+                                    💡
+                                </div>
+                                <div>
+                                    <p class="text-xs uppercase tracking-[0.2em] text-gray-400 font-black mb-1">Keahlian</p>
+                                    <p class="text-xl font-medium text-gray-700 leading-tight">Digital Marketing & Branding</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-16 pt-8 border-t border-white/40 text-center">
+                        <p class="text-gray-500 italic text-lg font-light leading-relaxed">
+                            "Setiap tantangan adalah peluang untuk menciptakan cerita pemasaran yang tak terlupakan."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobby Section -->
+        <section id="hobby" class="mt-40">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+                <div class="text-left">
+                    <h2 class="text-4xl md:text-5xl font-serif-italic mb-4">Sisi Kreatif</h2>
+                    <p class="text-gray-600 font-light text-lg">Cara saya mengasah imajinasi dan menjaga keseimbangan diri.</p>
+                </div>
+                <div class="hidden md:block text-pink-400 text-4xl">❤️</div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <!-- Hobby: Menyanyi -->
+                <div class="group relative pt-12">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 z-10 p-5 rounded-full bg-pink-100 text-pink-600 shadow-lg group-hover:scale-125 transition-all duration-500">
+                        🎤
+                    </div>
+                    <div class="glass p-8 pt-16 text-center h-full border-none group-hover:bg-white/60 transition-all duration-500 rounded-[2rem] group-hover:-translate-y-2">
+                        <h3 class="text-xl font-bold mb-4 tracking-tight">Menyanyi</h3>
+                        <p class="text-gray-600 leading-relaxed font-light text-sm italic">
+                            Melodi adalah cara saya bercerita tanpa kata, menyalurkan energi positif lewat harmoni suara.
+                        </p>
+                    </div>
+                </div>
+                <!-- Hobby: Menggambar -->
+                <div class="group relative pt-12">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 z-10 p-5 rounded-full bg-purple-100 text-purple-600 shadow-lg group-hover:scale-125 transition-all duration-500">
+                        🎨
+                    </div>
+                    <div class="glass p-8 pt-16 text-center h-full border-none group-hover:bg-white/60 transition-all duration-500 rounded-[2rem] group-hover:-translate-y-2">
+                        <h3 class="text-xl font-bold mb-4 tracking-tight">Menggambar</h3>
+                        <p class="text-gray-600 leading-relaxed font-light text-sm italic">
+                            Setiap goresan adalah visualisasi ide yang tak terbatas, menciptakan dunia baru di atas kanvas.
+                        </p>
+                    </div>
+                </div>
+                <!-- Hobby: Menulis -->
+                <div class="group relative pt-12">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 z-10 p-5 rounded-full bg-blue-100 text-blue-600 shadow-lg group-hover:scale-125 transition-all duration-500">
+                        ✍️
+                    </div>
+                    <div class="glass p-8 pt-16 text-center h-full border-none group-hover:bg-white/60 transition-all duration-500 rounded-[2rem] group-hover:-translate-y-2">
+                        <h3 class="text-xl font-bold mb-4 tracking-tight">Menulis</h3>
+                        <p class="text-gray-600 leading-relaxed font-light text-sm italic">
+                            Merangkai kata demi kata untuk mengabadikan pemikiran, perasaan, dan strategi yang bermakna.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="mt-40 text-center">
+            <div class="relative p-12 md:p-24 rounded-[3rem] overflow-hidden shadow-2xl bg-white/20 backdrop-blur-xl border border-white/40">
+                <div class="absolute top-0 right-0 p-8 opacity-5 text-pink-500 pointer-events-none">
+                    <svg class="w-64 h-64" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path></svg>
+                </div>
+                
+                <h2 class="text-4xl md:text-6xl font-serif-italic mb-8 relative z-10">Mari Terhubung!</h2>
+                <p class="text-xl text-gray-700 mb-12 max-w-2xl mx-auto font-light leading-relaxed relative z-10">
+                    Saya sangat senang bertemu orang baru dan mendiskusikan ide-ide kreatif. Mari mulai obrolan seru hari ini!
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10">
+                    <a href="https://wa.me/622337931876" target="_blank" class="flex items-center gap-3 px-12 py-5 bg-[#25D366] text-white rounded-full font-bold text-lg shadow-[0_10px_30px_rgba(37,211,102,0.3)] hover:shadow-[0_15px_40px_rgba(37,211,102,0.4)] hover:scale-105 transition-all">
+                        <span>💬</span> WhatsApp Sherly
+                    </a>
+                    <a href="mailto:sherlyrosita@example.com" class="px-12 py-5 bg-white/60 backdrop-blur-md border border-white text-gray-700 rounded-full font-bold text-lg hover:bg-white transition-all shadow-md">
+                        📧 Kirim Email
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-16 text-center border-t border-white/20">
+        <div class="flex flex-col items-center gap-4">
+            <div class="w-12 h-0.5 bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+            <p class="text-gray-500 text-sm font-medium tracking-[0.3em] uppercase">
+                © 2024 • Sherly Rosita Ningtyas
+            </p>
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest">SMA Negeri 1 Magetan, Kelas XII IPA 6</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple logic for scroll highlighting could be added here
+        window.addEventListener('scroll', () => {
+            const sections = ['home', 'about', 'hobby'];
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const element = document.getElementById(section);
+                if (element && window.pageYOffset >= element.offsetTop - 100) {
+                    current = section;
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-pink-600');
+                link.classList.add('text-gray-600');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('text-pink-600');
+                    link.classList.remove('text-gray-600');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
